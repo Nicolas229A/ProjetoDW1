@@ -1,0 +1,120 @@
+form label, form p, form input {
+    display: block;
+    font-size: 20px;
+    margin: 0 10x;
+}
+
+body {
+    background-color:white;
+    text-align: center; 
+}
+.cabecalho {
+    background-color:indigo;
+    color: white;
+    font-size: 50px;
+
+}
+
+.navegacao{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.logotop{
+    width: 360px;
+}
+
+.menu{
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+.item_menu {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+.link_menu {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.link_menu:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+main {
+    text-align: left;
+    width: 940px;
+    margin: 0 auto;
+    padding: 5px 0;
+    font-size: 20px;
+
+}
+
+form {
+    margin: 40px 0;
+}
+
+.inputpadrao {
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background-color: indigo;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    /*transition 1s background;*/
+    transition: 1s  all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: rgb(31, 3, 54);
+}
+.rodape {
+    background-color: indigo;
+    color:white;
+    height: 30px;
+    
+}
+
+@media screen and (max-width: 768px){
+
+    .navegacao {
+        position:static;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        width:auto;
+    }
+    .menu{
+        position: static;
+        top: 0px;
+        right: 0;
+    }
+
+    .menu-ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

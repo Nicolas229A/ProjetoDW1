@@ -1,0 +1,137 @@
+body {
+    background-color:white;
+    text-align: center;
+}
+.cabecalho {
+    background-color:indigo;
+    color: white;
+    font-size: 50px;
+
+}
+
+.navegacao{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.logotop{
+    width: 360px;
+}
+
+.menu{
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+.item_menu {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+.link_menu {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.link_menu:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+.Parte_principal {
+    text-align: center;
+    background-color: black;
+
+}
+
+.Parte_principal div {
+    display: inline-block;
+    /*padding: 50px 0;
+    margin-left: 50px;*/
+    vertical-align: top;
+    border-color: indigo;
+    border-width: 4px;
+    border-style:groove;
+    color:white
+}
+
+.Parte_principal div:hover {
+    border-color: yellow;
+}
+
+.Parte_principal div:hover h1 {
+    font-size: 25px;
+    color: yellow;
+}
+
+.Parte_principal div:hover p {
+    color:yellow;
+    font-weight: bold;
+}
+.Parte_principal h1 {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.imagem_bolada {
+    width: 200px;
+}
+
+.Parte_principal p {
+    /*text-align: justify;
+    width: 200px;*/
+    padding: 5px 0;
+}
+
+.linkaobrabo {
+    text-decoration: none;
+    color: white;
+}
+
+.linksus {
+    text-decoration: none;
+    color: white;
+}
+p {
+    font-size: 20px;
+}
+
+.rodape {
+    background-color: indigo;
+    color:white;
+    height: 30px;
+    
+}
+
+@media screen and (max-width: 768px){
+    
+    .navegacao {
+        position:static;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        width:auto;
+    }
+    .menu{
+        position: static;
+        top: 0px;
+        right: 0;
+    }
+
+    .menu-ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .imagem_bolada{
+
+        width: 100%;
+
+    }
+
+}
+ 
